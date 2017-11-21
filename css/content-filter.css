@@ -103,7 +103,14 @@ xtab-filter
 .cd-gallery ul {
     padding: 0;
 }
-
+.cd-gallery ul li {
+    border-radius: 10px;
+}
+    
+.cd-gallery ul li img {
+    border-radius: 10px 10px 0 0;
+}
+    
 @media only screen and (min-width: 768px) {
   .cd-tab-filter {
     /* tabbed navigation style on medium devices */

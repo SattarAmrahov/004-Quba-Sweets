@@ -9,12 +9,27 @@ ul, li, ul li {
 }
 .navbar-light .navbar-nav .active>.nav-link {
     color: #d81b60;
+    font-weight: bold;
+    border-left: 3px solid #d81b60;
+    padding-left: 10px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    padding-left: 13px;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #d81b60;
 }
 
 nav {
     height: auto;
     background-color: #ffffff;
 }
+
+nav .navbar {
+    padding: 0 !important;
+}
+
 nav .navbar-brand {
     position: relative;
     z-index: 1;
@@ -27,6 +42,7 @@ nav .navbar-brand .logo{
 }
 .navbar-nav{
     margin-top: 35px;
+    
 }
 
 
@@ -123,6 +139,10 @@ footer .footer-logo {
     margin-top: 80px;
 }
 
+footer .footer-image {
+    padding-left: 0;
+}
+
 .footer-items {
     margin: 30px 0;
     text-align: center;
@@ -132,8 +152,21 @@ footer .footer-logo {
     margin: 15px 0;
 }
 
+.copyright {
+    background-color: #d81b60;
+    color: #fff;
+    padding: 15px;
+    letter-spacing: 2px;
+    width: 100%;
+    margin: 0;
+}
+.copyright p{
+    margin: 0;
+}
 
-
+.popup-image {
+    text-decoration: none;
+}
 
 /* Tablets */
 @media (min-width: 768px) {
@@ -166,5 +199,15 @@ footer .footer-logo {
         width: 250px;
     }
     
+    .navbar-light .navbar-nav .active>.nav-link {
+        color: #d81b60;
+        font-weight: bold;
+        border: none;
+        border-bottom: 3px solid #d81b60;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        
+    }
     
 }
